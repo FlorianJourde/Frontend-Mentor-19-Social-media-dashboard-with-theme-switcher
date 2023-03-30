@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-very-pale-blue);
+  padding: 50px 0 150px;
+
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h1 {
+      font-size: var(--fs-big-title);
+    }
+
+    p {
+      color: var(--clr-dark-grayish-blue);
+      font-weight: var(--fw-secondary);
+    }
+  }
+}

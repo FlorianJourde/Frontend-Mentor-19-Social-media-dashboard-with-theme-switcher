@@ -1,12 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import '../../styles/App.scss'
+import Navbar from "../Navbar";
+import Dashboard from "../Dashboard";
+import OverviewCard from "../OverviewCard";
+import Overview from "../Overview";
+// import reactLogo from '../../assets/react.svg'
+// import viteLogo from '/vite.svg'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <div>
+      <Navbar/>
+      <Dashboard/>
+      <Overview/>
+    </div>
+  )
+
+/*  return (
     <div className="App">
       <div>
         <a href="https://vitejs.dev" target="_blank">
@@ -29,7 +41,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </div>
-  )
+  )*/
 }
 
 export default App
