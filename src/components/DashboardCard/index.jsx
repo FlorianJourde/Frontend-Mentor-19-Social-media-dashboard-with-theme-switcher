@@ -3,7 +3,7 @@ import {dashboard} from "../../datas/dashboard";
 function DashboardCard() {
   return (
     <ul className={'dashboard cards'}>
-      {dashboard.map(({id, user, number,title,todayFollower, brandIcon, arrowIcon, accentColor}) => (
+      {dashboard.map(({id, user, number, title, todayFollower, brandIcon, arrowIcon, accentColor}) => (
         <li key={id} className={'card'}>
           <hr style={{background: accentColor}}/>
           <div className={'user'}>
@@ -19,7 +19,7 @@ function DashboardCard() {
             <p>{todayFollower}</p>
           </div>
         </li>
-        ))}
+      ))}
     </ul>
   )
 }

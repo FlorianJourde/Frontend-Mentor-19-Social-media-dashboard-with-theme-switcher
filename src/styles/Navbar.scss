@@ -64,8 +64,8 @@ nav {
       width: 20px;
       height: 20px;
       position: absolute;
-      left: calc(50% - 24px/2 - 10px);
-      top: calc(50% - 20px/2);
+      left: calc(50% - 24px / 2 - 10px);
+      top: calc(50% - 20px / 2);
       border-radius: 50%;
       background: var(--clr-body-background);
       transition: all 0.2s ease-out;
@@ -73,12 +73,12 @@ nav {
     }
 
     .checkbox:checked + .switch {
-      background-color: var(--clr-green);
+      background: linear-gradient(to right, #3b9ad7, var(--clr-green));
     }
 
     .checkbox:checked + .switch .slider {
-      left: calc(50% - 15px/2 + 10px);
-      top: calc(50% - 20px/2);
+      left: calc(50% - 15px / 2 + 10px);
+      top: calc(50% - 20px / 2);
     }
   }
 }
