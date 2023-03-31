@@ -46,6 +46,7 @@ body {
   font-family: var(--ff-primary);
   background-color: var(--clr-body-background);
   color: var(--clr-primary-text);
+  transition: background-color .4s;
 }
 
 input, button, textarea, select {

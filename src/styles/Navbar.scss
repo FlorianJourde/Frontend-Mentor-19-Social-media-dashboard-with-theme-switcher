@@ -6,6 +6,7 @@ nav {
   align-items: center;
   background-color: var(--clr-nav-background);
   padding: 50px 0 150px;
+  transition: background-color .4s;
 
   .left-column {
     display: flex;
