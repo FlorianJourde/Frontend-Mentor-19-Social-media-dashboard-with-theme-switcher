@@ -1,22 +1,41 @@
-import { useState } from 'react'
+import {useContext, useEffect, useState} from 'react'
 // import '../../styles/App.scss'
 import Navbar from "../Navbar";
 import Dashboard from "../Dashboard";
-import OverviewCard from "../OverviewCard";
+// import OverviewCard from "../OverviewCard";
 import Overview from "../Overview";
-// import reactLogo from '../../assets/react.svg'
-// import viteLogo from '/vite.svg'
+import {useTheme} from "../../utils/hooks";
+import {ThemeContext, ThemeProvider} from "../../utils/context";
+// import '../../styles/light-theme.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const {toggleTheme, theme} = useContext(ThemeContext);
+  const { theme } = useTheme()
+  // const [theme, setTheme] = useState(
+  //   localStorage.getItem('theme') || 'light'
+  // );
+  // const toggleTheme = () => {
+  //   if (theme === 'light') {
+  //     setTheme('dark');
+  //   } else {
+  //     setTheme('light');
+  //   }
+  // }
 
-  return (
-    <div>
-      <Navbar/>
-      <Dashboard/>
-      <Overview/>
-    </div>
-  )
+  // useEffect(() => {
+  //   localStorage.setItem('theme', theme);
+  //   document.body.dataset.theme = theme;
+  // }, [theme]);
+
+  // return (
+  //     <ThemeProvider>
+  //       <div>
+  //           <Navbar/>
+  //           <Dashboard/>
+  //           <Overview/>
+  //       </div>
+  //     </ThemeProvider>
+  // )
 
 /*  return (
     <div className="App">

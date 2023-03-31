@@ -44,7 +44,7 @@ export const dashboard = [
     todayFollower: '144 Today',
     brandIcon: youtubeIcon,
     arrowIcon: downIcon,
-    accentColor: '#ab0e30'
+    accentColor: '#b9082e'
   }
 ]
 

@@ -4,8 +4,12 @@
 
   h2 {
     font-size: var(--fs-big-title);
-    color: var(--clr-dark-grayish-blue);
+    color: var(--clr-secondary-text);
     padding-bottom: 30px;
+  }
+
+  body[data-theme=dark] & h2 {
+    color: var(--clr-primary-text);
   }
 
   .overview {
@@ -19,12 +23,12 @@
       gap: 20px;
       justify-content: space-between;
       align-items: center;
-      background-color: var(--clr-light-grayish-blue);
-      border-radius: 10px;
+      background-color: var(--clr-card-background);
+      border-radius: 8px;
       position: relative;
       overflow: hidden;
       cursor: pointer;
-      transition: background-color .4s;
+      transition: color .4s, background-color .4s;
 
       .left-column {
         display: flex;
@@ -32,6 +36,11 @@
         justify-content: space-between;
         height: 100%;
         gap: 30px;
+
+        p {
+          color: var(--clr-secondary-text);
+          font-weight: var(--fw-secondary);
+        }
 
         h3 {
           font-size: var(--fs-big-title);
@@ -57,7 +66,7 @@
           display: flex;
           gap: 10px;
           text-transform: uppercase;
-          color: var(--clr-desaturated-blue);
+          color: var(--clr-tertiary-text);
           font-size: var(--fs-accent);
           font-weight: var(--fw-secondary);
 
@@ -72,7 +81,7 @@
       }
 
       &:hover {
-        background-color: var(--clr-grayish-blue);
+        background-color: var(--clr-card-background-hover);
       }
     }
   }

@@ -9,15 +9,25 @@
   --fw-primary: 400;
   --fw-secondary: 700;
   --fw-tertiary: 800;
-  --clr-white: hsl(0, 0%, 100%);
-  --clr-very-pale-blue: hsl(225, 100%, 98%);
-  --clr-light-grayish-blue: hsl(227, 47%, 96%);
-  --clr-grayish-blue: #e1e3f0;
-  --clr-dark-grayish-blue: hsl(228, 12%, 44%);
-  --clr-very-dark-blue: hsl(230, 17%, 14%);
-  --clr-very-dark-blue-2: hsl(232, 19%, 15%);
-  --clr-dark-desaturated-blue: hsl(228, 28%, 20%);
-  --clr-desaturated-blue: hsl(228, 34%, 66%);
+  --clr-body-background: hsl(0, 0%, 100%);
+  --clr-nav-background: hsl(225, 100%, 98%);
+  --clr-card-background: hsl(227, 47%, 96%);
+  --clr-card-background-hover: #e1e3f0;
+  --clr-primary-text: hsl(0, 0%, 0%);
+  --clr-secondary-text: hsl(228, 12%, 44%);
+  --clr-tertiary-text: hsl(228, 34%, 66%);
+  --clr-green: #1eb589;
+  --clr-red: #dc414c;
+}
+
+[data-theme='dark'] {
+  --clr-body-background: #17181b;
+  --clr-nav-background: hsl(230, 17%, 14%);
+  --clr-card-background: hsl(228, 28%, 20%);
+  --clr-card-background-hover: #333a56;
+  --clr-primary-text: hsl(0, 0%, 100%);
+  --clr-secondary-text: hsl(228, 34%, 66%);
+  --clr-tertiary-text: hsl(228, 12%, 44%);
   --clr-green: #1eb589;
   --clr-red: #dc414c;
 }
@@ -34,6 +44,8 @@ html {
 
 body {
   font-family: var(--ff-primary);
+  background-color: var(--clr-body-background);
+  color: var(--clr-primary-text);
 }
 
 input, button, textarea, select {
